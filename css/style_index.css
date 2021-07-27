@@ -498,6 +498,15 @@ body {
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
   color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .swiper-button-next {
@@ -508,6 +517,15 @@ body {
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
   color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .swiper-button-next img {
@@ -625,6 +643,14 @@ body {
   border-radius: 16px;
 }
 
+.popular__item.continue:hover {
+  background: #7aa222;
+}
+
+.popular__item.continue:active {
+  background: #5c7b16;
+}
+
 .popular__item.continue span {
   color: #ffffff;
   margin: 0 44px;
@@ -632,6 +658,7 @@ body {
   font-size: 27px;
   line-height: 32px;
   text-align: center;
+  margin-bottom: 26px;
 }
 
 .popular__item__logo {
@@ -666,7 +693,7 @@ body {
 }
 
 .popular__item__price {
-  font-family: "Gilroy-Semibold";
+  font-family: "Gilroy-Medium";
   font-size: 17px;
   padding-left: 16px;
   line-height: 24px;
@@ -985,12 +1012,12 @@ body {
 
 .footer__services__link:hover,
 .footer__website__link:hover {
-  text-decoration: underline;
+  color: #000000;
 }
 
 .footer__services__link:active,
 .footer__website__link:active {
-  text-decoration: none;
+  color: #000000;
 }
 
 .footer__contacts {
