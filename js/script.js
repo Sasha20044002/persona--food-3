@@ -165,7 +165,7 @@ for (
 $("#fixed").text(`
   .fixed-btn{
     position: fixed;
-    right: ${($(window).width() - $("#modal-body").width()) / 2 + 8}px;
+    right: ${($(window).width() - $("#modal-body").width()) / 2 + 16}px;
     bottom: ${($(window).height() - $("#modal-body").height()) / 2}px;
   }
 
@@ -181,7 +181,7 @@ $(window).resize(function () {
   $("#fixed").text(`
     .fixed-btn{
       position: fixed;
-      right: ${($(window).width() - $("#modal-body").width()) / 2 + 8}px;
+      right: ${($(window).width() - $("#modal-body").width()) / 2 + 16}px;
       bottom: ${($(window).height() - $("#modal-body").height()) / 2}px;
     }
     @media (max-width: 850px) {
