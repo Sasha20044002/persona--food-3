@@ -10,6 +10,8 @@
     />
     <link rel="stylesheet" href="css/style_index.css" />
     <style id="style-1"></style>
+    <style id="fixed"></style>
+    <style id="modal"></style>
   </head>
   <body id="body">
     <header class="header" id="header">
@@ -260,6 +262,304 @@
                 height="56"
               />
             </div>
+            <button id="open-modal-1">ОТКРЫТЬ МОДАЛКУ 1</button>
+            <button id="open-modal-2">ОТКРЫТЬ МОДАЛКУ 2</button>
+            <button id="open-modal-3">ОТКРЫТЬ МОДАЛКУ 3</button>
+            <div class="modal hidden" id="programm-modal">
+              <div class="modal-wrapper" id="modal-wrapper">
+                <div class="modal-body" id="modal-body">
+                  <div class="close-modal"></div>
+                  <div class="modal-left">
+                    <div class="modal-photo">
+                      <img
+                        src="./img/food.png"
+                        alt="food-image"
+                        class="modal-img"
+                      />
+                    </div>
+                    <button class="modal-btn">Список блюд</button>
+                  </div>
+                  <div class="modal-right">
+                    <p class="modal-title">Программа: 1500 каллорий</p>
+                    <p class="modal-duration">Длительность (дней):</p>
+                    <p class="modal-days">
+                      <input type="radio" name="days" id="one" />
+                      <input type="radio" name="days" id="seven" checked />
+                      <input type="radio" name="days" id="fourteen" />
+                      <input type="radio" name="days" id="twenty-one" />
+                      <input type="radio" name="days" id="thirty" />
+                      <label for="one">1</label>
+                      <label for="seven">7</label>
+                      <label for="fourteen">24</label>
+                      <label for="twenty-one">21</label>
+                      <label for="thirty">30</label>
+                    </p>
+                    <div class="modal-intolerances">
+                      <p class="modal-intolerances__title">Непереносимости</p>
+                      <div class="modal-intolerances__flex">
+                        <input
+                          type="checkbox"
+                          name="intolerances"
+                          id="gluten-free"
+                        />
+                        <label for="gluten-free"
+                          ><div class="box"></div>
+                          <span>Глютен</span></label
+                        >
+                      </div>
+                      <div class="modal-intolerances__flex">
+                        <input type="checkbox" name="intolerances" id="nuts" />
+                        <label for="nuts"
+                          ><div class="box"></div>
+                          <span>Орехи</span></label
+                        >
+                      </div>
+                      <div class="modal-intolerances__flex">
+                        <input
+                          type="checkbox"
+                          name="intolerances"
+                          id="lactose"
+                        />
+                        <label for="lactose"
+                          ><div class="box"></div>
+                          <span>Лактоза</span></label
+                        >
+                      </div>
+                      <p class="modal-intolerances__desc">
+                        Это полноценный сбалансированный рацион, состоящий из
+                        натуральных и качественных продуктов.
+                      </p>
+                    </div>
+                    <div class="modal-food-intake">
+                      <p class="modal-food-intake__title">4 приема пищи</p>
+                      <p class="modal-food-intake-point">1) Завтрак</p>
+                      <p class="modal-food-intake-point">2) Обеда</p>
+                      <p class="modal-food-intake-point">3) Полдник</p>
+                      <p class="modal-food-intake-point">4) Ужин</p>
+                    </div>
+                    <div class="fixed-btn">
+                      <button>Добавить за 6000 ₽</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal hidden" id="programm-menu-modal">
+              <div class="modal-wrapper" id="modal-wrapper-2">
+                <div class="modal-body" id="modal-body">
+                  <div class="close-modal"></div>
+                  <div class="modal-content">
+                    <div class="modal-top">
+                      <button class="modal-arrow prev">
+                        <img src="./img/arrow.svg" alt="arrow-ico" />
+                      </button>
+                      <div class="modal-top-title">
+                        <span class="modal-top-title-1"
+                          >Дени 1 - 25 Июнь - Пятница</span
+                        >
+                        <span class="modal-top-title-2"
+                          >К/Б/Ж/У: 260/68/120/90
+                        </span>
+                      </div>
+                      <button class="modal-arrow next">
+                        <img src="./img/arrow.svg" alt="arrow-ico" />
+                      </button>
+                    </div>
+                    <div class="modal-middle">
+                      <div class="modal-middle-photo">
+                        <img src="./img/pizza.png" alt="image" />
+                      </div>
+                      <div class="modal-middle-list">
+                        <div class="modal-middle-list-item active">
+                          <img
+                            src="./img/pizza.png"
+                            alt="photo"
+                            class="modal-middle-list-item-photo"
+                          />
+                          <div class="modal-middle-list-item-content">
+                            <p class="modal-middle-list-item-content-title">
+                              Салат с орехами
+                            </p>
+                            <p class="modal-middle-list-item-content-text">
+                              К/Б/Ж/У: 240/60/28/90
+                            </p>
+                          </div>
+                        </div>
+                        <div class="modal-middle-list-item">
+                          <img
+                            src="./img/pizza.png"
+                            alt="photo"
+                            class="modal-middle-list-item-photo"
+                          />
+                          <div class="modal-middle-list-item-content">
+                            <p class="modal-middle-list-item-content-title">
+                              Салат с орехами
+                            </p>
+                            <p class="modal-middle-list-item-content-text">
+                              К/Б/Ж/У: 240/60/28/90
+                            </p>
+                          </div>
+                        </div>
+                        <div class="modal-middle-list-item">
+                          <img
+                            src="./img/pizza.png"
+                            alt="photo"
+                            class="modal-middle-list-item-photo"
+                          />
+                          <div class="modal-middle-list-item-content">
+                            <p class="modal-middle-list-item-content-title">
+                              Салат с орехами
+                            </p>
+                            <p class="modal-middle-list-item-content-text">
+                              К/Б/Ж/У: 240/60/28/90
+                            </p>
+                          </div>
+                        </div>
+                        <div class="modal-middle-list-item">
+                          <img
+                            src="./img/pizza.png"
+                            alt="photo"
+                            class="modal-middle-list-item-photo"
+                          />
+                          <div class="modal-middle-list-item-content">
+                            <p class="modal-middle-list-item-content-title">
+                              Салат с орехами
+                            </p>
+                            <p class="modal-middle-list-item-content-text">
+                              К/Б/Ж/У: 240/60/28/90
+                            </p>
+                          </div>
+                        </div>
+                        <div class="modal-middle-list-item">
+                          <img
+                            src="./img/pizza.png"
+                            alt="photo"
+                            class="modal-middle-list-item-photo"
+                          />
+                          <div class="modal-middle-list-item-content">
+                            <p class="modal-middle-list-item-content-title">
+                              Салат с орехами
+                            </p>
+                            <p class="modal-middle-list-item-content-text">
+                              К/Б/Ж/У: 240/60/28/90
+                            </p>
+                          </div>
+                        </div>
+                        <div class="modal-middle-list-item">
+                          <img
+                            src="./img/pizza.png"
+                            alt="photo"
+                            class="modal-middle-list-item-photo"
+                          />
+                          <div class="modal-middle-list-item-content">
+                            <p class="modal-middle-list-item-content-title">
+                              Салат с орехами
+                            </p>
+                            <p class="modal-middle-list-item-content-text">
+                              К/Б/Ж/У: 240/60/28/90
+                            </p>
+                          </div>
+                        </div>
+                        <div class="modal-middle-list-item">
+                          <img
+                            src="./img/pizza.png"
+                            alt="photo"
+                            class="modal-middle-list-item-photo"
+                          />
+                          <div class="modal-middle-list-item-content">
+                            <p class="modal-middle-list-item-content-title">
+                              Салат с орехами
+                            </p>
+                            <p class="modal-middle-list-item-content-text">
+                              К/Б/Ж/У: 240/60/28/90
+                            </p>
+                          </div>
+                        </div>
+                        <div class="modal-middle-list-item">
+                          <img
+                            src="./img/pizza.png"
+                            alt="photo"
+                            class="modal-middle-list-item-photo"
+                          />
+                          <div class="modal-middle-list-item-content">
+                            <p class="modal-middle-list-item-content-title">
+                              Салат с орехами
+                            </p>
+                            <p class="modal-middle-list-item-content-text">
+                              К/Б/Ж/У: 240/60/28/90
+                            </p>
+                          </div>
+                        </div>
+                        <div class="modal-middle-list-item">
+                          <img
+                            src="./img/pizza.png"
+                            alt="photo"
+                            class="modal-middle-list-item-photo"
+                          />
+                          <div class="modal-middle-list-item-content">
+                            <p class="modal-middle-list-item-content-title">
+                              Салат с орехами
+                            </p>
+                            <p class="modal-middle-list-item-content-text">
+                              К/Б/Ж/У: 240/60/28/90
+                            </p>
+                          </div>
+                        </div>
+                        <div class="modal-middle-list-item">
+                          <img
+                            src="./img/pizza.png"
+                            alt="photo"
+                            class="modal-middle-list-item-photo"
+                          />
+                          <div class="modal-middle-list-item-content">
+                            <p class="modal-middle-list-item-content-title">
+                              Салат с орехами
+                            </p>
+                            <p class="modal-middle-list-item-content-text">
+                              К/Б/Ж/У: 240/60/28/90
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal hidden" id="item-modal">
+              <div class="modal-wrapper" id="modal-wrapper-3">
+                <div class="modal-body" id="modal-body">
+                  <div class="close-modal"></div>
+                  <div class="modal-left">
+                    <div class="modal-photo">
+                      <img
+                        src="./img/food.png"
+                        alt="food-image"
+                        class="modal-img"
+                      />
+                    </div>
+                  </div>
+                  <div class="modal-right">
+                    <p class="modal-title">
+                      Бефстроганов из говядины с кремом из картофеля и цветной
+                      капусты
+                    </p>
+                    <p class="modal-weight">330 г / 180 Ккал</p>
+                    <p class="modal-vitamins">
+                      Белки/Жиры/Углеводы (г): 68/120/90
+                    </p>
+                    <p class="modal-desc">
+                      Бекон, цыпленок, ветчина, сыр блю чиз, сыры чеддер и
+                      пармезан, соус песто, кубики брынзы, томаты черри, красный
+                      лук, моцарелла, соус альфредо, чеснок, итальянские травы
+                    </p>
+                    <div class="fixed-btn">
+                      <button>Добавить за 6000 ₽</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="restaurant" id="restaurant">
@@ -267,7 +567,7 @@
           <div class="back-2">
             <nav class="restaurant__nav">
               <input type="radio" name="restaurant" id="all" checked />
-              <input type="radio" name="restaurant" id="garnish" />
+              <input type="radio" name="restaurant" id="holodnye-zakuski" />
               <input type="radio" name="restaurant" id="hot-dishes" />
               <input type="radio" name="restaurant" id="hot-snacks" />
               <input type="radio" name="restaurant" id="desserts" />
@@ -281,15 +581,15 @@
               >
               <label
                 class="restaurant__item"
-                for="garnish"
-                data-filter="garnish"
+                for="holodnye-zakuski"
+                data-filter="holodnye-zakuski"
                 >Гарнир</label
               >
               <label
                 class="restaurant__item"
                 for="hot-dishes"
                 data-filter="hot-dishes"
-                >Горячие&nbsp;блюда</label
+                >Холодные&nbsp;закуски</label
               >
               <label
                 class="restaurant__item"
@@ -324,93 +624,9 @@
             </nav>
           </div>
           <div class="restaurant__list">
-            <div class="restaurant__block garnish">
+            <div class="restaurant__block" data-sorting="holodnye-zakuski">
               <p class="restaurant__block__title">Гарнир</p>
               <div class="restaurant__block__grid">
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output class="foog-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output class="foog-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
-                <div class="restaurant__block__item">
-                  <div class="restaurant__block__item__photo">
-                    <img
-                      src="img/food.png"
-                      alt="img"
-                      width="184"
-                      height="142"
-                      class="restaurant__block__item__img"
-                    />
-                  </div>
-                  <span class="restaurant__block__item__title">
-                    Бефстроганов из говядины с кремом из картофеля и цветной
-                    капусты
-                  </span>
-                  <span class="restaurant__block__item__desc">
-                    330 г / 180 Ккал
-                  </span>
-                  <div class="restaurant__block__item__bottom">
-                    <span class="restaurant__block__item__price">
-                      <output class="foog-cost">6 000</output> ₽
-                    </span>
-                    <button class="restaurant__block__item__btn">
-                      <span class="restaurant__block__item__btn__text"
-                        >Добавить</span
-                      >
-                    </button>
-                  </div>
-                </div>
                 <div class="restaurant__block__item">
                   <div class="restaurant__block__item__photo">
                     <img
