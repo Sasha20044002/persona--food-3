@@ -822,7 +822,10 @@ body.overflow {
 
 .modal-right {
   width: 340px;
-  padding: 32px 32px 0;
+  padding: 32px 0;
+  margin: 0 32px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
   padding-bottom: 106px;
   overflow: auto;
   -ms-scroll-snap-type: y mandatory;
@@ -868,6 +871,7 @@ body.overflow {
   font-family: "Gilroy-Semibold";
   font-size: 17px;
   line-height: 24px;
+  margin-bottom: 8px;
 }
 
 .modal-days {
@@ -1079,7 +1083,7 @@ body.overflow {
 }
 
 .modal-top-title-1 {
-  font-family: "Gilroy-Bold";
+  font-family: "Gilroy-Semibold";
   font-size: 27px;
   line-height: 32px;
   color: #000000;
@@ -1150,6 +1154,11 @@ body.overflow {
   border-radius: 16px;
 }
 
+.modal-middle-list-item:hover {
+  -webkit-box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+}
+
 .modal-middle-list-item.active {
   border: 1px solid #85af27;
   -webkit-box-sizing: border-box;
@@ -1193,7 +1202,7 @@ body.overflow {
 .modal-arrow {
   width: 44px;
   height: 44px;
-  background-color: #fff;
+  background-color: #ffffff;
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
@@ -1208,6 +1217,15 @@ body.overflow {
       -ms-flex-pack: center;
           justify-content: center;
   border: none;
+}
+
+.modal-arrow:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.modal-arrow:active {
+  background: #f7f7f7;
 }
 
 .modal-arrow:focus,
@@ -1853,6 +1871,10 @@ body.overflow {
     right: 4px;
   }
 
+  .modal .fixed-btn {
+    width: 100%;
+  }
+
   .modal-middle {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1877,6 +1899,7 @@ body.overflow {
   .modal-right {
     width: 340px;
     padding: 32px 0 0;
+    margin: 0;
     padding-bottom: 106px;
     overflow: visible;
     -ms-scroll-snap-type: none;
@@ -2040,7 +2063,7 @@ body.overflow {
 
   .modal-top-title-1,
   .modal-top-title-2 {
-    font-family: "Gilroy-Medium";
+    font-family: "Gilroy-Semibold";
     font-size: 15px;
     line-height: 16px;
   }
@@ -2057,5 +2080,11 @@ body.overflow {
 
   .modal-btn {
     width: 288px;
+  }
+}
+
+@media (max-width: 332px) {
+  .modal-photo {
+    width: 100%;
   }
 }

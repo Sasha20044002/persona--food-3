@@ -171,8 +171,8 @@ $("#fixed").text(`
 
   @media (max-width: 850px) {
     .fixed-btn{
-      right: 50%;
-      margin-right: -${$(".fixed-btn").width() / 2}px;
+      right: 0;
+      bottom: 0;
     }
   }
 `);
@@ -186,8 +186,8 @@ $(window).resize(function () {
     }
     @media (max-width: 850px) {
       .fixed-btn{
-        right: 50%;
-        margin-right: -${$(".fixed-btn").width() / 2}px;
+        right: 0;
+        bottom: 0;
       }
     }
   `);
