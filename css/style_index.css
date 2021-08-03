@@ -3296,6 +3296,35 @@ button:hover {
   }
 }
 
+@media (max-width: 660px) {
+  .cart .oplata-modalka__body {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    background: #ffffff;
+  }
+
+  .cart .oplata-modalka__close {
+    top: 16px;
+    right: 16px;
+    background-image: url(../img/close-menu-mibole.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .cart .oplata-modalka__body .title {
+    font-size: 27px;
+    line-height: 32px;
+  }
+
+  .cart .oplata-modalka__body .desc {
+    font-size: 15px;
+    line-height: 16px;
+    margin: 0 0 24px;
+  }
+}
+
 @media (max-width: 600px) {
   .line {
     display: none;
@@ -3495,6 +3524,16 @@ button:hover {
 
   .cart__left__data .delivery-field .self-call button {
     width: 100%;
+  }
+
+  .cart .oplata-modalka__body .desc {
+    width: 90%;
+  }
+}
+
+@media (max-width: 380px) {
+  .cart .oplata-modalka__body button {
+    width: 90%;
   }
 }
 
