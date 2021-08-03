@@ -244,3 +244,115 @@ $("#item-modal").click(function (e) {
     $("body").removeClass("overflow");
   }
 });
+
+function openCart() {
+  $("#cart").removeClass("hidden");
+  $("#cart").addClass("visible");
+  $("body").addClass("overflow");
+}
+
+function closeCart() {
+  $("#cart").addClass("hidden");
+  $("#cart").removeClass("visible");
+  $("body").removeClass("overflow");
+  $("#page-1").addClass("visible");
+  $("#page-1").removeClass("hidden");
+  $("#page-2").removeClass("visible");
+  $("#page-2").addClass("hidden");
+  $("#page-3").removeClass("visible");
+  $("#page-3").addClass("hidden");
+}
+
+$("#open-cart").click(function (e) {
+  e.preventDefault();
+
+  openCart();
+});
+
+$(".close-cart").click(function () {
+  closeCart();
+});
+
+
+function closeFirstOpenSecond() {
+  $("#page-1").removeClass("visible");
+  $("#page-1").addClass("hidden");
+  $("#page-2").addClass("visible");
+  $("#page-2").removeClass("hidden");
+}
+
+function closeSecondOpenThird() {
+  $("#page-2").removeClass("visible");
+  $("#page-2").addClass("hidden");
+  $("#page-3").addClass("visible");
+  $("#page-3").removeClass("hidden");
+}
+
+function closeSecondOpenFirst() {
+  $("#page-1").addClass("visible");
+  $("#page-1").removeClass("hidden");
+  $("#page-2").removeClass("visible");
+  $("#page-2").addClass("hidden");
+}
+
+$("#next-page-to-2").click(function () {
+  closeFirstOpenSecond();
+});
+
+$("#next-page-to-3").click(function (e) {
+  e.preventDefault();
+
+  closeSecondOpenThird();
+});
+
+$(".back-to-cart").click(function () {
+  closeSecondOpenFirst();
+});
+
+$(".delivery-label").click(function () {
+  $(".delivery").addClass("visible");
+  $(".delivery").removeClass("hidden");
+  $(".self-call").addClass("hidden");
+  $(".self-call").removeClass("visible");
+});
+
+$(".self-call-label").click(function () {
+  $(".delivery").removeClass("visible");
+  $(".delivery").addClass("hidden");
+  $(".self-call").removeClass("hidden");
+  $(".self-call").addClass("visible");
+});
+
+$("#self-call-variants").click(function (e) {
+  e.preventDefault();
+});
+
+function openOplataModalka() {
+  $(".oplata-modalka").removeClass("hidden");
+  $(".oplata-modalka").addClass("visible");
+}
+
+function closeOplataModalka() {
+  $(".oplata-modalka").addClass("hidden");
+  $(".oplata-modalka").remove("visible");
+}
+
+$("#oplata-modalka-btn-open").click(function (e) {
+  e.preventDefault();
+
+  openOplataModalka();
+});
+
+$(".oplata-modalka").click(function (e) {
+  if (e.target == document.querySelector(".oplata-modalka")) {
+    closeOplataModalka();
+  }
+});
+
+$(".oplata-modalka__close").click(function (e) {
+  closeOplataModalka();
+});
+
+$(".try-again").click(function () {
+  closeOplataModalka();
+});

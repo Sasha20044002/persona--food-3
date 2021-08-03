@@ -90,7 +90,7 @@
                 >
               </li>
             </div>
-            <a href="#" class="header__nav-2__btn">
+            <a href="#" class="header__nav-2__btn" id="open-cart">
               <div class="header__nav-2__btn__logo"></div>
               <span class="header__nav-2__btn__text">Корзина</span>
               <div class="header__nav-2__btn__line"></div>
@@ -100,6 +100,357 @@
         </div>
       </nav>
     </header>
+    <div class="cart hidden" id="cart">
+      <div id="page-1" class="page visible">
+        <header class="cart__header">
+          <button class="cart__header__btn close-cart">Назад на сайт</button>
+          <img
+            src="./img/arrow.svg"
+            alt="ico"
+            class="cart__header__btn img close-cart"
+          />
+          <div class="cart__header__order">
+            <div class="cart__header__order__item active">
+              <div class="cart__header__order__item__up">1</div>
+              <div class="cart__header__order__item__text">Корзина</div>
+            </div>
+            <div class="cart__header__order__item disabled">
+              <div class="cart__header__order__item__up">2</div>
+              <div class="cart__header__order__item__text">Оформление</div>
+            </div>
+            <div class="cart__header__order__item disabled">
+              <div class="cart__header__order__item__up">3</div>
+              <div class="cart__header__order__item__text">Ожидайте</div>
+            </div>
+          </div>
+        </header>
+        <main class="cart__main">
+          <p class="cart__main__title">Корзина</p>
+          <p class="cart__main__empty-text">
+            Вы еще не добавили ни одного товара
+          </p>
+          <div class="cart__main__no-empty">
+            <div class="cart__main__no-register">
+              <img src="./img/tag.svg" alt="ico" />
+              <p>
+                Зарегистрируйтесь, пополните депозит и получите скидку до 15% на
+                все заказы
+              </p>
+              <button>Регистрация/Вход</button>
+            </div>
+            <div class="cart__main__warning">
+              <img src="./img/warning.svg" alt="ico" />
+              <p>За доставку может взиматся отдельная плата</p>
+            </div>
+            <div class="cart__main__list">
+              <div class="cart__main__item">
+                <div class="cart__main__item__content">
+                  <img src="./img/pizza.png" alt="photo" width="60" />
+                  <div class="cart__main__item__content__text">
+                    <p>Салат с орехами</p>
+                    <span>Опция 1, опция 2</span>
+                  </div>
+                </div>
+                <div class="cart__main__item__btns">
+                  <button class="minus">
+                    <img src="./img/minus.svg" alt="ico" />
+                  </button>
+                  <output class="count-item">1</output>
+                  <button class="plus">
+                    <img src="./img/plus.svg" alt="ico" />
+                  </button>
+                  <output class="summ">6800 ₽</output>
+                  <button class="delete"></button>
+                </div>
+              </div>
+              <div class="cart__main__item">
+                <div class="cart__main__item__content">
+                  <img src="./img/pizza.png" alt="photo" width="60" />
+                  <div class="cart__main__item__content__text">
+                    <p>Салат с орехами</p>
+                    <span>Опция 1, опция 2</span>
+                  </div>
+                </div>
+                <div class="cart__main__item__btns">
+                  <button class="minus">
+                    <img src="./img/minus.svg" alt="ico" />
+                  </button>
+                  <output class="count-item">2</output>
+                  <button class="plus">
+                    <img src="./img/plus.svg" alt="ico" />
+                  </button>
+                  <output class="summ">6800 ₽</output>
+                  <button class="delete"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="cart__main__total-amount">
+            Сумма заказа: <output>0 ₽</output>
+          </p>
+          <div class="cart__main__promocode">
+            <input
+              type="text"
+              name="promocode"
+              id="promocode"
+              class="cart__main__promocode__input"
+              placeholder="Введите промокод"
+            />
+            <button class="cart__main__promocode__btn">Применить</button>
+          </div>
+          <button class="cart__main__btn" id="next-page-to-2">
+            Оформить заказ
+          </button>
+        </main>
+        <div class="line"></div>
+      </div>
+      <div id="page-2" class="page hidden">
+        <header class="cart__header">
+          <button class="cart__header__btn back-to-cart">
+            Назад в корзину
+          </button>
+          <img
+            src="./img/arrow.svg"
+            alt="ico"
+            class="cart__header__btn img back-to-cart"
+          />
+          <div class="cart__header__order">
+            <div class="cart__header__order__item completed">
+              <div class="cart__header__order__item__up">1</div>
+              <div class="cart__header__order__item__text">Корзина</div>
+            </div>
+            <div class="cart__header__order__item active">
+              <div class="cart__header__order__item__up">2</div>
+              <div class="cart__header__order__item__text">Оформление</div>
+            </div>
+            <div class="cart__header__order__item disabled">
+              <div class="cart__header__order__item__up">3</div>
+              <div class="cart__header__order__item__text">Ожидайте</div>
+            </div>
+          </div>
+        </header>
+        <main class="cart__main">
+          <div class="cart__flex">
+            <div class="cart__left">
+              <p class="cart__left__title">Оформление заказа</p>
+              <div class="cart__main__no-register">
+                <img src="./img/tag.svg" alt="ico" />
+                <p>
+                  Зарегистрируйтесь, пополните депозит и получите скидку до 15%
+                  на все заказы
+                </p>
+                <button>Регистрация/Вход</button>
+              </div>
+              <form class="cart__left__data" id="form-data">
+                <div class="name">
+                  <label for="name">Имя</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Введите имя"
+                  />
+                </div>
+                <div class="tel">
+                  <label for="tel">Номер телефона</label>
+                  <input
+                    type="tel"
+                    name="tel"
+                    id="tel"
+                    pattern="+7-[0-9]{3}-[0-9]{3}[0-9]{4}"
+                    placeholder="Ввести номер"
+                  />
+                </div>
+                <div class="variant-delivery">
+                  <div class="variant-delivery__flex">
+                    <input
+                      type="radio"
+                      name="intolerances"
+                      id="delivery"
+                      checked
+                    />
+                    <label for="delivery" class="delivery-label"
+                      ><div class="box"></div>
+                      <span>Доставка</span></label
+                    >
+                  </div>
+                  <div class="variant-delivery__flex">
+                    <input type="radio" name="intolerances" id="self-call" />
+                    <label for="self-call" class="self-call-label"
+                      ><div class="box"></div>
+                      <span>Самовызов</span></label
+                    >
+                  </div>
+                </div>
+                <div class="delivery-field">
+                  <div class="delivery visible">
+                    <p class="delivery__title">Адрес доставки</p>
+                    <input
+                      type="text"
+                      class="delivery__street"
+                      placeholder="Улица"
+                    />
+                    <input
+                      type="number"
+                      class="delivery__home"
+                      placeholder="Дом"
+                    />
+                    <input
+                      type="number"
+                      class="delivery__apartament"
+                      placeholder="Квартира"
+                    />
+                    <input
+                      type="number"
+                      class="delivery__entrance"
+                      placeholder="Подъезд"
+                    />
+                    <input
+                      type="number"
+                      class="delivery__doorphone"
+                      placeholder="Домофон"
+                    />
+                    <input
+                      type="number"
+                      class="delivery__floor"
+                      placeholder="Этаж"
+                    />
+                  </div>
+                  <div class="self-call hidden">
+                    <p class="self-call__title">Пункт самовывоза</p>
+                    <button id="self-call-variants">Выберите пункт</button>
+                  </div>
+                </div>
+                <div class="note">
+                  <p class="note__title">Примечание к заказу</p>
+                  <textarea
+                    name="note"
+                    class="note__field"
+                    id="note"
+                    cols="30"
+                    rows="10"
+                    placeholder="Введите примечание"
+                  ></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="cart__right">
+              <p class="cart__right__title">Состав заказа</p>
+              <div class="cart__right__list">
+                <div class="cart__right__item">
+                  <div class="cart__right__item__content">
+                    <p class="cart__right__item__content__title">
+                      Салат с орехами
+                    </p>
+                    <p class="cart__right__item__content__desc">
+                      Опция 1, Опция 2
+                    </p>
+                  </div>
+                  <div class="cart__right__item__price">
+                    5 <span class="small">x</span> 460 ₽
+                  </div>
+                </div>
+                <div class="cart__right__item">
+                  <div class="cart__right__item__content">
+                    <p class="cart__right__item__content__title">
+                      Программа: 1000 калорий
+                    </p>
+                    <p class="cart__right__item__content__desc">
+                      Опция 1, Опция 2
+                    </p>
+                  </div>
+                  <div class="cart__right__item__price">
+                    5 <span class="small">x</span> 460 ₽
+                  </div>
+                </div>
+                <div class="cart__right__item">
+                  <div class="cart__right__item__content">
+                    <p class="cart__right__item__content__title">
+                      Салат с орехами
+                    </p>
+                    <p class="cart__right__item__content__desc">
+                      Опция 1, Опция 2
+                    </p>
+                  </div>
+                  <div class="cart__right__item__price">
+                    5 <span class="small">x</span> 460 ₽
+                  </div>
+                </div>
+                <div class="cart__right__summ">
+                  <span>Стоимость заказа</span>
+                  <span class="price">26 000 ₽</span>
+                </div>
+                <div class="cart__right__delivery">
+                  <span>Доставка</span>
+                  <span class="price">800 ₽</span>
+                </div>
+                <div class="cart__right__promocode">
+                  <span>Промокод: “Cкидки всем”</span>
+                  <span class="price green">- 400 ₽</span>
+                </div>
+                <div class="cart__right__total">
+                  <span>Итого</span>
+                  <span class="price">26 400 ₽</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="full-width">
+            <button
+              form="form-data"
+              id="next-page-to-3"
+              class="cart__left__btn"
+            >
+              Оплатить заказ
+            </button>
+            <!-- все что ниже и касается модалки удалить -->
+            <br />
+            <button id="oplata-modalka-btn-open">Модалка</button>
+          </div>
+        </main>
+        <div class="line"></div>
+        <div class="oplata-modalka hidden">
+          <div class="oplata-modalka__body">
+            <img src="./img/big-cross.svg" alt="ico" />
+            <p class="title">Оплата не прошла</p>
+            <p class="desc">Пожалуйста, попробуйте поменять способ оплаты.</p>
+            <button class="try-again">Попробовать еще раз</button>
+            <div class="oplata-modalka__close"></div>
+          </div>
+        </div>
+      </div>
+      <div id="page-3" class="page hidden">
+        <header class="cart__header">
+          <button class="cart__header__btn close-cart">Назад на сайт</button>
+          <img
+            src="./img/arrow.svg"
+            alt="ico"
+            class="cart__header__btn img close-cart"
+          />
+          <div class="cart__header__order">
+            <div class="cart__header__order__item completed">
+              <div class="cart__header__order__item__up">1</div>
+              <div class="cart__header__order__item__text">Корзина</div>
+            </div>
+            <div class="cart__header__order__item completed">
+              <div class="cart__header__order__item__up">2</div>
+              <div class="cart__header__order__item__text">Оформление</div>
+            </div>
+            <div class="cart__header__order__item completed">
+              <div class="cart__header__order__item__up">3</div>
+              <div class="cart__header__order__item__text">Ожидайте</div>
+            </div>
+          </div>
+        </header>
+        <main class="cart__main">
+          <p class="cart__main__title">Заказ №55864 успешно оформлен</p>
+          <p class="cart__main__desc">
+            Оператор позвонит вам для подтверждения заказа в течении 3-х минут
+          </p>
+        </main>
+        <div class="line"></div>
+      </div>
+    </div>
     <div class="swiper-container" id="slider">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
