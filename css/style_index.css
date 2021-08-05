@@ -163,6 +163,12 @@
   margin: 0;
 }
 
+.container {
+  width: 1120px;
+  padding-top: 48px;
+  margin: 0 auto;
+}
+
 html {
   height: 100%;
 }
@@ -2840,8 +2846,16 @@ button:hover {
 }
 
 @media (max-width: 1152px) {
-  .header,
-  .container,
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .header {
+    width: 95%;
+    margin: 0 auto;
+  }
+
   .swiper-container,
   .cart__header,
   .cart__main {
@@ -2884,11 +2898,6 @@ button:hover {
 }
 
 @media (max-width: 1061px) {
-  .swiper-container {
-    width: 100%;
-    border-radius: 0;
-  }
-
   .header {
     height: 48px;
     display: -webkit-box;
@@ -2939,20 +2948,6 @@ button:hover {
   .header__nav-2__btn__line,
   .header__nav-2__btn__count {
     display: none;
-  }
-
-  .swiper-button-prev,
-  .swiper-button-next {
-    display: none;
-  }
-
-  .restaurant .back-2.fixed {
-    position: fixed;
-    top: 0px;
-  }
-
-  .restaurant .back-2.fixed .restaurant__nav {
-    width: 95%;
   }
 
   #mobile-menu:checked ~ .header__nav {
@@ -3082,6 +3077,25 @@ button:hover {
 
   #mobile-menu:checked ~ .header__nav .header__nav-2__btn {
     display: none;
+  }
+
+  .swiper-container {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+
+  .restaurant .back-2.fixed {
+    position: fixed;
+    top: 0px;
+  }
+
+  .restaurant .back-2.fixed .restaurant__nav {
+    width: 95%;
   }
 }
 
