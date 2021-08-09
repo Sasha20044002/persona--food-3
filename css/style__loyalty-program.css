@@ -516,29 +516,68 @@ button:hover {
 
 .discount__range__item {
   margin-top: 16px;
-}
-
-.ui-slider.ui-slider-horizontal {
-  background: #f2f2f2;
+  border-radius: 8px;
   height: 8px;
-  border: none;
+  width: 100%;
+  -webkit-appearance: none;
+  background: -webkit-linear-gradient(left, #85af27 0%, #85af27 25%, #ffffff 25%, #ffffff 100%);
 }
 
-.ui-slider .ui-slider-handle {
+.discount__range__item::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #ffffff;
   width: 40px;
   height: 40px;
-  cursor: pointer;
-  background: #ffffff;
+  border-radius: 8px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  margin-top: -13px;
-  margin-left: -25px;
+  outline: none;
 }
 
-.ui-slider .ui-slider-range {
-  background: #85af27;
+.discount__range__item::-moz-range-track {
+  margin-top: 16px;
+  border-radius: 8px;
   height: 8px;
+  width: 100%;
+  -moz-appearance: none;
+  background: -moz-linear-gradient(left, #85af27 0%, #85af27 25%, #ffffff 25%, #ffffff 100%);
+}
+
+.discount__range__item::-moz-range-thumb {
+  -moz-appearance: none;
+  background: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.discount__range__item::-ms-thumb {
+  -ms-appearance: none;
+  background: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.discount__range__item::-ms-track {
+  margin-top: 16px;
+  border-radius: 8px;
+  height: 8px;
+  width: 100%;
+  -ms-appearance: none;
+  background: -ms-linear-gradient(left, #85af27 0%, #85af27 25%, #ffffff 25%, #ffffff 100%);
+}
+
+.discount__range__item::-ms-fill-lower {
+  background: -ms-linear-gradient(left, #85af27 0%, #85af27 25%, #ffffff 25%, #ffffff 100%);
+}
+
+.discount__range__item::-ms-fill-upper {
+  background: -ms-linear-gradient(left, #85af27 0%, #85af27 25%, #ffffff 25%, #ffffff 100%);
 }
 
 .content__title {

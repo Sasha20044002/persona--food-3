@@ -115,7 +115,16 @@
               <span class="discount__range__title-2">10% скидка</span>
             </div>
             <div class="discount__range__container">
-              <div class="discount__range__item" id="range"></div>
+              <input
+                type="range"
+                class="discount__range__item"
+                name="range"
+                id="range"
+                min="0"
+                max="100"
+                value="25"
+                oninput="range()"
+              />
             </div>
           </div>
         </div>
@@ -227,11 +236,9 @@
           </div>
         </div>
       </footer>
-    </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="./js/jquery-ui-slider.js"></script>
-    <script src="./js/jquery.ui.touch-punch.min.js"></script>
-    <script src="./js/main.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+      <script src="./js/main.js"></script>
+    </div>
   </body>
 </html>
