@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Программа лояльности</title>
-    <link rel="stylesheet" href="css/style__loyalty-program.css" />
+    <title>О нас</title>
+    <link rel="stylesheet" href="css/style_about-us.css" />
   </head>
   <body>
     <header class="header" id="header">
@@ -99,54 +99,88 @@
 
     <div class="container">
       <main class="main">
-        <p class="main__title">Программа лояльности</p>
-        <div class="discount">
-          <p class="discount__title">Скидка на все заказы</p>
-          <ul class="discount__list">
-            <li class="discount__item">
-              2% всем зарегистрировавшимся. Без ограничений срока.
-            </li>
-            <li class="discount__item">
-              от 5 до 20% на определенный срок при определенной сумме заказов
-              или пополнений депозита в течении одного месяца.
-            </li>
-          </ul>
-          <div class="discount__range">
-            <div class="discount__range__title">
-              <span class="discount__range__title-1">6 000</span>
-              <span class="discount__range__title-2">10% скидка</span>
+        <p class="main__title">О нас</p>
+        <div class="main__flex">
+          <div class="main__left">
+            <div class="mission">
+              <p class="mission__title">Наша миссия</p>
+              <ul class="mission__list">
+                <li class="mission__item">Делать Вашу жизнь яркой и легкой!</li>
+                <li class="mission__item">
+                  Подарить Вам свободное время, освободив от рутинных домашних
+                  дел
+                </li>
+                <li class="mission__item">
+                  Приготовить для Вас сбалансированную, энергетическую, живую
+                  еду
+                </li>
+              </ul>
             </div>
-            <div class="discount__range__container">
-              <input
-                type="range"
-                class="discount__range__item"
-                name="range"
-                id="range"
-                min="0"
-                max="100"
-                value="25"
-                oninput="range()"
-              />
+            <div class="rules">
+              <p class="rules__title">Наши правила на кухне</p>
+              <ul class="rules__list">
+                <li class="rules__item">
+                  Приготовление еды происходит только с положительными эмоциями!
+                </li>
+                <li class="rules__item">
+                  Тщательный подбор ингредиентов в блюде, для наилучшего
+                  сохранения питательных элементов
+                </li>
+                <li class="rules__item">Полезная еда должна быть вкусной!</li>
+                <li class="rules__item">
+                  Разнообразие. Более 200 + новых блюд в каждом новом сезоне.
+                </li>
+              </ul>
             </div>
           </div>
+          <div class="main__right">
+            <img class="main__right__photo" src="#" alt="image" />
+          </div>
         </div>
-        <div class="content">
-          <p class="content__title">
-            Вернем часть суммы на депозит от заказов друзей
-          </p>
-          <ul class="content__list">
-            <li class="content__item">Зарегистрируйтесь</li>
-            <li class="content__item">
-              В личном кабинете скопируйте вашу персональную скидку и поделитесь
-              ею с друзьями
-            </li>
-            <li class="content__item">
-              Получайте 5% от каждого их заказа на депозит
-            </li>
-            <li class="content__item">
-              Получайте 2% от каждого заказа их друзей
-            </li>
-          </ul>
+        <div class="main__team">
+          <p class="main__team__title">Команда</p>
+          <div class="main__team__list">
+            <div class="main__team__item">
+              <img src="#" class="main__team__item__photo" alt="image" />
+              <p class="main__team__item__name">Айгуль Хусаинова</p>
+              <p class="main__team__item__role">Основатель</p>
+              <p class="main__team__item__desc">
+                Одна из первых в республике начала активно развивать сеть фитнес
+                клубов, поставив цель привлекать к здоровому образу жизни все
+                большее количество людей. Айгуль сама всегда остается в отличной
+                физической форме и убеждена, что правильное питание — залог
+                прекрасного самочувствия.
+              </p>
+            </div>
+            <div class="main__team__item">
+              <img src="#" class="main__team__item__photo" alt="image" />
+              <p class="main__team__item__name">Айрат Мухамедьяров</p>
+              <p class="main__team__item__role">Шеф-повар</p>
+              <p class="main__team__item__desc">
+                Более 20 лет работает в сфере питания и верит в то, что еда
+                должна оздаравливать и наполнять энергией, поэтому мы продвигаем
+                идею приготовлениея полезной и сбалансированной еды и только с
+                положительными эмоциями. На нашей кухне работает более 50
+                человек: повара, технолог, диетолог, кухонные работники и
+                официанты, объединенные идеей компании, ежедневно улучшая
+                качество жизни сотен людей!
+              </p>
+            </div>
+            <div class="main__team__item">
+              <img src="#" class="main__team__item__photo" alt="image" />
+              <p class="main__team__item__name">Айрат Мухамедьяров</p>
+              <p class="main__team__item__role">Шеф-повар</p>
+              <p class="main__team__item__desc">
+                Более 20 лет работает в сфере питания и верит в то, что еда
+                должна оздаравливать и наполнять энергией, поэтому мы продвигаем
+                идею приготовлениея полезной и сбалансированной еды и только с
+                положительными эмоциями. На нашей кухне работает более 50
+                человек: повара, технолог, диетолог, кухонные работники и
+                официанты, объединенные идеей компании, ежедневно улучшая
+                качество жизни сотен людей!
+              </p>
+            </div>
+          </div>
         </div>
       </main>
       <footer class="footer">
@@ -239,8 +273,5 @@
         </div>
       </footer>
     </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="./js/main.js"></script>
   </body>
 </html>

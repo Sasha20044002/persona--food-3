@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Программа лояльности</title>
-    <link rel="stylesheet" href="css/style__loyalty-program.css" />
+    <title>Условия доставки</title>
+    <link rel="stylesheet" href="css/style_terms-of-delivery.css" />
   </head>
   <body>
     <header class="header" id="header">
@@ -99,54 +99,62 @@
 
     <div class="container">
       <main class="main">
-        <p class="main__title">Программа лояльности</p>
-        <div class="discount">
-          <p class="discount__title">Скидка на все заказы</p>
-          <ul class="discount__list">
-            <li class="discount__item">
-              2% всем зарегистрировавшимся. Без ограничений срока.
-            </li>
-            <li class="discount__item">
-              от 5 до 20% на определенный срок при определенной сумме заказов
-              или пополнений депозита в течении одного месяца.
-            </li>
-          </ul>
-          <div class="discount__range">
-            <div class="discount__range__title">
-              <span class="discount__range__title-1">6 000</span>
-              <span class="discount__range__title-2">10% скидка</span>
+        <p class="main__title">Условия доставки</p>
+        <div class="main__flex">
+          <div class="main__left">
+            <div class="order-payment">
+              <p class="order-payment__title">Заказ и оплата</p>
+              <ul class="order-payment__list">
+                <li class="order-payment__item">
+                  Оплата заказа возможна с помощью внесения депозита, либо
+                  единоразовой оплатой на сайте
+                </li>
+                <li class="order-payment__item">
+                  При оплате депозитом в зависимости от внесённой суммы
+                  предусмотрены выгоды. Более подробно с депозитной системой
+                  можно ознакомиться в разделе
+                  <span class="blue">система лояльности</span>
+                </li>
+                <li class="order-payment__item">
+                  Внесение депозита осуществляется с помощью Банковской
+                  карты/Google pay/Apple pay
+                </li>
+              </ul>
             </div>
-            <div class="discount__range__container">
-              <input
-                type="range"
-                class="discount__range__item"
-                name="range"
-                id="range"
-                min="0"
-                max="100"
-                value="25"
-                oninput="range()"
-              />
+            <div class="delivery">
+              <p class="delivery__title">Доставка</p>
+              <ul class="delivery__list">
+                <li class="delivery__item">
+                  Мы осуществляем доставку в городе Уфа
+                </li>
+                <li class="delivery__item">
+                  Мы доставляем заказы ежедневно на день вперед
+                </li>
+                <li class="delivery__item">
+                  Доставка осуществляется вечером с 18:00 до 22:00 в удобное для
+                  вас время
+                </li>
+                <li class="delivery__item">
+                  Если в момент принятия заказа вы планируете находиться по
+                  другому адресу, вы можете изменить адрес доставки в личном
+                  кабинете до 14:00 часов дня доставки
+                </li>
+                <li class="delivery__item">
+                  Доставка специальных программ питания
+                  <span style="text-transform: uppercase">БЕСПЛАТНА</span> по
+                  городу. Стоимость доставки за пределы города уточняйте у
+                  менеджера
+                </li>
+                <li class="delivery__item">
+                  Доставка из ресторана бесплатна при сумме доставки от 1500
+                  рублей
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
-        <div class="content">
-          <p class="content__title">
-            Вернем часть суммы на депозит от заказов друзей
-          </p>
-          <ul class="content__list">
-            <li class="content__item">Зарегистрируйтесь</li>
-            <li class="content__item">
-              В личном кабинете скопируйте вашу персональную скидку и поделитесь
-              ею с друзьями
-            </li>
-            <li class="content__item">
-              Получайте 5% от каждого их заказа на депозит
-            </li>
-            <li class="content__item">
-              Получайте 2% от каждого заказа их друзей
-            </li>
-          </ul>
+          <div class="main__right">
+            <img class="main__right__photo" src="#" alt="image" />
+          </div>
         </div>
       </main>
       <footer class="footer">
@@ -239,8 +247,5 @@
         </div>
       </footer>
     </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="./js/main.js"></script>
   </body>
 </html>

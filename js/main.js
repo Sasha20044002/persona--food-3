@@ -4,8 +4,8 @@ function range() {
     background:
       "-webkit-linear-gradient(left,#85af27 0%,#85af27 " +
       val +
-      "%,#ffffff " +
+      "%,#f2f2f2 " +
       val +
-      "%,#ffffff 100%)",
+      "%,#f2f2f2 100%)",
   });
 }
