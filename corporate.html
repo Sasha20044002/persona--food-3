@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Центр повышенной ресурсности</title>
-    <link rel="stylesheet" href="css/style_center.css" />
+    <title>Корпоративное питание</title>
+    <link rel="stylesheet" href="css/style_corporate.css" />
   </head>
   <body>
     <header class="header" id="header">
@@ -101,138 +101,53 @@
 
     <div class="container">
       <main class="main">
-        <p class="main__title">Центр повышения ресурсности</p>
-        <div class="main__list">
-          <div class="main__item">
-            <p class="main__item__general-role">Диетолог</p>
-            <img
-              src="./img/photo.png"
-              alt="photo"
-              class="main__item__photo"
-              width="352px"
-              height="352px"
-            />
-            <p class="main__item__name">Мария Егорова</p>
-            <p class="main__item__role">Диетолог</p>
-            <p class="main__item__desc">
-              "Более 20 лет я помогаю людям быть здоровыми, красивыми и
-              счастливыми. Привтваю полезные привычки". <br /><br />
-              Специализация: <br />
-              - рациональное питание <br />
-              - диетологическое сопровождение клиентов фитнес клубов <br />
-              - антиэйдж: питание и фитнес для снижения биологического возраста
-              и замедления темпов старения
+        <p class="main__title">Корпоративное питание</p>
+        <div class="main__flex">
+          <div class="content">
+            <p class="content__title">Заказ и оплата</p>
+            <p class="content__desc">
+              Берем на обслуживание от 5 человек
+              <ul class="content__list">
+                <li class="content__item">Рацион на весь день, с доставкой до 9 часов</li>
+                <li class="content__item">Рацион на обед , ужин, с доставкой до 11 часов</li>
+              </ul>
             </p>
-            <button id="get-consultation" class="main__item__btn">
-              Получить консультацию
-            </button>
           </div>
-          <div class="main__item">
-            <p class="main__item__general-role">Диетолог</p>
-            <img
-              src="./img/photo.png"
-              alt="photo"
-              class="main__item__photo"
-              width="352px"
-              height="352px"
-            />
-            <p class="main__item__name">Мария Егорова</p>
-            <p class="main__item__role">Диетолог</p>
-            <p class="main__item__desc">
-              "Более 20 лет я помогаю людям быть здоровыми, красивыми и
-              счастливыми. Привтваю полезные привычки". <br /><br />
-              Специализация: <br />
-              - рациональное питание <br />
-              - диетологическое сопровождение клиентов фитнес клубов <br />
-              - антиэйдж: питание и фитнес для снижения биологического возраста
-              и замедления темпов старения
-            </p>
-            <button id="get-consultation" class="main__item__btn">
-              Получить консультацию
-            </button>
-          </div>
-          <div class="main__item">
-            <p class="main__item__general-role">Диетолог</p>
-            <img
-              src="./img/photo.png"
-              alt="photo"
-              class="main__item__photo"
-              width="352px"
-              height="352px"
-            />
-            <p class="main__item__name">Мария Егорова</p>
-            <p class="main__item__role">Диетолог</p>
-            <p class="main__item__desc">
-              "Более 20 лет я помогаю людям быть здоровыми, красивыми и
-              счастливыми. Привтваю полезные привычки". <br /><br />
-              Специализация: <br />
-              - рациональное питание <br />
-              - диетологическое сопровождение клиентов фитнес клубов <br />
-              - антиэйдж: питание и фитнес для снижения биологического возраста
-              и замедления темпов старения
-            </p>
-            <button id="get-consultation" class="main__item__btn">
-              Получить консультацию
-            </button>
-          </div>
-          <div class="main__item">
-            <p class="main__item__general-role">Диетолог</p>
-            <img
-              src="./img/photo.png"
-              alt="photo"
-              class="main__item__photo"
-              width="352px"
-              height="352px"
-            />
-            <p class="main__item__name">Мария Егорова</p>
-            <p class="main__item__role">Диетолог</p>
-            <p class="main__item__desc">
-              "Более 20 лет я помогаю людям быть здоровыми, красивыми и
-              счастливыми. Привтваю полезные привычки". <br /><br />
-              Специализация: <br />
-              - рациональное питание <br />
-              - диетологическое сопровождение клиентов фитнес клубов <br />
-              - антиэйдж: питание и фитнес для снижения биологического возраста
-              и замедления темпов старения
-            </p>
-            <button id="get-consultation" class="main__item__btn">
-              Получить консультацию
-            </button>
-          </div>
+          <form action="#" class="form">
+            <p class="form__title">Оставить заявку</p>
+            <div class="name">
+              <label for="name">Имя</label>
+              <input type="text" id="name" placeholder="Введите имя" />
+            </div>
+            <div class="tel">
+              <label for="tel">Телефон</label>
+              <input
+                type="tel"
+                name="tel"
+                id="tel"
+                placeholder="89173690216"
+              />
+            </div>
+            <div class="email">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Адрес электронной почты"
+              />
+            </div>
+            <button type="submit" class="submit confirm">Отправить</button>
+          </form>
         </div>
-        <div class="modal-consultation hidden">
+        <div class="modal hidden">
           <div class="modal__body">
-            <p class="modal__title">Получить консультацию</p>
-            <p class="modal__desc">
-              Пожалуйста, введите свои контактные данные для связи с оператором,
-              который поможет назначить время консультации.
-            </p>
-            <form action="#" method="POST" class="modal__form">
-              <div class="name">
-                <label for="name">Имя</label>
-                <input type="text" id="name" placeholder="Введите имя" />
-              </div>
-              <div class="tel">
-                <label for="tel">Телефон</label>
-                <input
-                  type="tel"
-                  name="tel"
-                  id="tel"
-                  placeholder="89173690216"
-                />
-              </div>
-              <div class="email">
-                <label for="email">Email</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Адрес электронной почты"
-                />
-              </div>
-              <button type="submit" class="submit">Подтвердить</button>
-              <a href="#" class="back">Назад</a>
-            </form>
+            <div class="modal__logo">
+              <img src="img/check.svg" alt="logo">
+            </div>
+            <p class="modal__title">Заявка успешно отправлена</p>
+            <p class="modal__desc">Наш оператор скоро свяжется с вами</p>
+            <button class="modal__close">Закрыть</button>
           </div>
         </div>
       </main>
@@ -328,6 +243,6 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="./js/center.js"></script>
+    <script src="./js/corporate.js"></script>
   </body>
 </html>

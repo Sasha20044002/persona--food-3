@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Условия доставки</title>
-    <link rel="stylesheet" href="css/style_terms-of-delivery.css" />
+    <title>К случаю</title>
+    <link rel="stylesheet" href="css/style_occasion.css" />
   </head>
   <body>
     <header class="header" id="header">
@@ -101,62 +101,67 @@
 
     <div class="container">
       <main class="main">
-        <p class="main__title">Условия доставки</p>
+        <p class="main__title">К случаю</p>
         <div class="main__flex">
-          <div class="main__left">
-            <div class="order-payment">
-              <p class="order-payment__title">Заказ и оплата</p>
-              <ul class="order-payment__list">
-                <li class="order-payment__item">
-                  Оплата заказа возможна с помощью внесения депозита, либо
-                  единоразовой оплатой на сайте
-                </li>
-                <li class="order-payment__item">
-                  При оплате депозитом в зависимости от внесённой суммы
-                  предусмотрены выгоды. Более подробно с депозитной системой
-                  можно ознакомиться в разделе
-                  <span class="blue">система лояльности</span>
-                </li>
-                <li class="order-payment__item">
-                  Внесение депозита осуществляется с помощью Банковской
-                  карты/Google pay/Apple pay
-                </li>
-              </ul>
+          <div class="content">
+            <div class="content__item">
+              <p class="content__item__title">Банкет</p>
+              <p class="content__item__desc">
+                Торжественное мероприятие с официантами от 1900 руб\чел
+              </p>
             </div>
-            <div class="delivery">
-              <p class="delivery__title">Доставка</p>
-              <ul class="delivery__list">
-                <li class="delivery__item">
-                  Мы осуществляем доставку в городе Уфа
-                </li>
-                <li class="delivery__item">
-                  Мы доставляем заказы ежедневно на день вперед
-                </li>
-                <li class="delivery__item">
-                  Доставка осуществляется вечером с 18:00 до 22:00 в удобное для
-                  вас время
-                </li>
-                <li class="delivery__item">
-                  Если в момент принятия заказа вы планируете находиться по
-                  другому адресу, вы можете изменить адрес доставки в личном
-                  кабинете до 14:00 часов дня доставки
-                </li>
-                <li class="delivery__item">
-                  Доставка специальных программ питания
-                  <span style="text-transform: uppercase">БЕСПЛАТНА</span> по
-                  городу. Стоимость доставки за пределы города уточняйте у
-                  менеджера
-                </li>
-                <li class="delivery__item">
-                  Доставка из ресторана бесплатна при сумме доставки от 1500
-                  рублей
-                </li>
-              </ul>
+            <div class="content__item">
+              <p class="content__item__title">Фуршет</p>
+              <p class="content__item__desc">
+                Мероприятия со свободным выбором блюд и приемом пищи стоя от 500
+                руб\чел
+              </p>
+            </div>
+            <div class="content__item">
+              <p class="content__item__title">Кофе-брейк и сладкий стол</p>
+              <p class="content__item__desc">
+                Короткий перерыв для приема пищи и неформального общения от 200
+                руб\чел
+              </p>
+            </div>
+            <div class="content__item">
+              <p class="content__item__title">Кейтеринг</p>
+              <p class="content__item__desc">
+                Выездное обслуживание на ресторанном уровне на любой локации от
+                1500 руб\чел
+              </p>
+            </div>
+            <div class="content__item">
+              <p class="content__item__title">
+                Выбор особых закусок и блюд к праздничному столу
+              </p>
+              <p class="content__item__desc">
+                Готовые вкусные блюда на мероприятия с доставкой или с
+                доставкой+сервировкой от 300 руб\блюдо
+              </p>
             </div>
           </div>
-          <div class="main__right">
-            <img class="main__right__photo" src="#" alt="image" />
-          </div>
+          <form action="#" class="form">
+            <p class="form__title">Оставить заявку</p>
+            <div class="name">
+              <label for="name">Имя</label>
+              <input type="text" id="name" placeholder="Введите имя" />
+            </div>
+            <div class="tel">
+              <label for="tel">Телефон</label>
+              <input type="tel" name="tel" id="tel" placeholder="89173690216" />
+            </div>
+            <div class="email">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Адрес электронной почты"
+              />
+            </div>
+            <button type="submit" class="submit confirm">Отправить</button>
+          </form>
         </div>
       </main>
       <footer class="footer">
