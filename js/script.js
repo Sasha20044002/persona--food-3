@@ -7,6 +7,7 @@ const sliderHeader = new Swiper("#slider", {
     prevEl: ".swiper-button-prev",
   },
   loop: true,
+  slidesPerView: 1,
 });
 
 $("#style-1").text(`
